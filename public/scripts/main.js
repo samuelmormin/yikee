@@ -3,7 +3,7 @@ if ('serviceWorker' in navigator) {
     // inscription du service workler
     window.addEventListener('load', () => {
     navigator.serviceWorker
-    .register('../public/sw.js')
+    .register('../sw.js')
     .then (reg => console.log("Service worker : Register"))
     .catch(err=> console.log("Service worker: Error ${err}"))
     })
